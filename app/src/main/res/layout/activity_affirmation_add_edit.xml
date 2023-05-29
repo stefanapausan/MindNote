@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AffirmationAddEditActivity">
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#feebe6"
+        android:gravity="start"
+        android:padding="10dp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        app:trackColor="#59A5A5A5"
+        app:indicatorSize="40dp"
+        app:trackThickness="4dp"
+        app:trackCornerRadius="8dp"
+        android:indeterminate="true" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Mind Note</string>
+
+    <string name="mindfulness_text">Mindfulness is the basic human ability to be fully present, aware of where we are and what we’re doing, and not overly reactive or overwhelmed by what’s going on around us.
+        \n\nWhile mindfulness is something we all naturally possess, it’s more readily available to us when we practice on a daily basis.
+        \n\nWhenever you bring awareness to what you’re directly experiencing via your senses, or to your state of mind via your thoughts and emotions, you’re being mindful. And there’s growing research showing that when you train your brain to be mindful, you’re actually remodeling the physical structure of your brain.
+
+        <b>How do I practice mindfulness and meditation?</b>
+        \n\nMindfulness is available to us in every moment, whether through meditations and body scans, or mindful moment practices like taking time to pause and breathe when the phone rings instead of rushing to answer it.
+    </string>
+
+
+
+    <string name="medidation_text">Meditation is exploring. It’s not a fixed destination. Your head doesn’t become vacuumed free of thought, utterly undistracted. It’s a special place where each and every moment is momentous. When we meditate we venture into the workings of our minds: our sensations (air blowing on our skin or a harsh smell wafting into the room), our emotions (love this, hate that, crave this, loathe that) and thoughts (wouldn’t it be weird to see an elephant playing a trumpet).
+        \n\nMindfulness meditation asks us to suspend judgment and unleash our natural curiosity about the workings of the mind, approaching our experience with warmth and kindness, to ourselves and others.
+
+    </string>
+    <string name="help_text">
+        <b>What is Lorem Ipsum?</b>
+        \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        \n\n\n
+
+        <b>Why do we use it?</b>
+        \n\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </string>
+
+    <string name="breathing_technique">
+        <b>Deep Breathing</b>
+        \n\nMost people take short, shallow breaths into their chest. It can make you feel anxious and zap your energy. With this technique, you\'ll learn how to take bigger breaths, all the way into your belly.
+
+        \n\n\n
+
+        <b>Breath Focus</b>
+        \n\nWhile you do deep breathing, use a picture in your mind and a word or phrase to help you feel more relaxed.
+
+        \n\n\n
+
+        <b>Equal Time for Breathing in and Breathing Out</b>
+        \n\nIn this exercise, you\'ll match how long you breathe in with how long you breathe out. Over time, you\'ll increase how long you\'re able to breathe in and out at a time.
+    </string>
+
+    <string name="relaxation_technique">
+        <b>Autogenic relaxation</b>
+        \n\nAutogenic means something that comes from within you. In this relaxation technique, you use both visual imagery and body awareness to reduce stress.
+
+        \n\n\n
+
+        <b>Progressive muscle relaxation</b>
+        \n\nIn this relaxation technique, you focus on slowly tensing and then relaxing each muscle group.
+
+        \n\n\n
+
+        <b>Visualization</b>
+        \n\nIn this relaxation technique, you may form mental images to take a visual journey to a peaceful, calming place or situation.
+    </string>
+
+</resources>

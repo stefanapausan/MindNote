@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/bottom_nav_journal"
+        android:title="Journal"
+        android:icon="@drawable/ic_journal"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/bottom_nav_drawing"
+        android:title="Drawing"
+        android:icon="@drawable/ic_draw"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/bottom_nav_affirmation"
+        android:title="Affirmation"
+        android:icon="@drawable/ic_affirmation"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/bottom_nav_mindfulness"
+        android:icon="@drawable/ic_mindfulness"
+        android:title="Mindfulness"
+        tools:ignore="HardcodedText" />
+
+</menu>

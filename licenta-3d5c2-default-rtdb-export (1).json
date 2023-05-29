@@ -1,0 +1,75 @@
+{
+  "Users": {
+    "a8WndHPFK0ZeWnzgDuaJHf1iux62": {
+      "Profile": {
+        "userEmail": "pausanstefana@gmail.com",
+        "userName": "Stefi"
+      }
+    },
+    "fhmfGfl0BeO5sM3BHZp1QzLOqaz2": {
+      "Affirmations": {
+        "-N2kPKQEX5kZI5AHkNuj": {
+          "date": "Jun 8, 2022 23:30:27",
+          "key": "-N2kPKQEX5kZI5AHkNuj",
+          "note": "I am getting better every day"
+        },
+        "-N2kPLzGRHW5hrCMvaGP": {
+          "date": "Jun 8, 2022 23:30:11",
+          "key": "-N2kPLzGRHW5hrCMvaGP",
+          "note": "I am confident"
+        },
+        "-N3F_BLZXDtN9Gtz9OrY": {
+          "date": "Jun 8, 2022 23:29:38",
+          "key": "-N3F_BLZXDtN9Gtz9OrY",
+          "note": "I am enough"
+        },
+        "-N46oXurQ2raNecpaC8X": {
+          "date": "Jun 9, 2022 12:36:09",
+          "key": "-N46oXurQ2raNecpaC8X",
+          "note": "I can make a difference"
+        }
+      },
+      "Journals": {
+        "-N2kEY5pWlzYnR9UPJeA": {
+          "date": "Jun 13, 2022 02:38:44",
+          "feeling": "Excited",
+          "key": "-N2kEY5pWlzYnR9UPJeA",
+          "mode": "7",
+          "note": "First entry"
+        },
+        "-N2kFhLZziIl_yMxtD13": {
+          "date": "Jun 13, 2022 02:38:49",
+          "feeling": "Stressed",
+          "key": "-N2kFhLZziIl_yMxtD13",
+          "mode": "3",
+          "note": "Day 2"
+        },
+        "-N2kIy738RhUW-6a1kB2": {
+          "date": "Jun 13, 2022 02:38:51",
+          "feeling": "Meh",
+          "key": "-N2kIy738RhUW-6a1kB2",
+          "mode": "5",
+          "note": "Day 3"
+        },
+        "-N3Esr_y5xEXcLASab_k": {
+          "date": "Jun 13, 2022 02:38:52",
+          "feeling": "Grateful",
+          "key": "-N3Esr_y5xEXcLASab_k",
+          "mode": "9",
+          "note": "Day 4"
+        },
+        "-N46nPbNMueaCEU_2ZHR": {
+          "date": "Jun 18, 2022 11:58:54",
+          "feeling": "Hopeful",
+          "key": "-N46nPbNMueaCEU_2ZHR",
+          "mode": "7",
+          "note": "Day 5"
+        }
+      },
+      "Profile": {
+        "userEmail": "stefana_pausan@yahoo.com",
+        "userName": "Stefana"
+      }
+    }
+  }
+}

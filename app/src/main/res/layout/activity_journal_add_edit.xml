@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".JournalAddEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="359dp"
+                android:layout_height="219dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FEEBE6"
+                android:gravity="start"
+                android:hint="Enter your text"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/mode_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_note"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="How would you rate your mood?"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/emo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mode_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="5">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emo_01" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emo_02" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emo_03" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emo_04" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emo_05" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emo_layout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/mode1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode1"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode3"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode5"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode5"
+                    android:text="5"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode7"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode7"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode9"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode9"
+                    android:text="9"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_num1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/mode2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode2"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode4"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode6"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode6"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode8"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode8"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mode10"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:onClick="setMode10"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/feeling_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="How are you feeling?"
+                android:textColor="@color/black" />
+
+
+            <LinearLayout
+                android:id="@+id/feeling_row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeling_title"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/feeling1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling1"
+                    android:text="Happy"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling2"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling2"
+                    android:text="Grateful"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling3"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling3"
+                    android:text="Confident"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling4"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling4"
+                    android:text="Excited"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feeling_row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeling_row1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/feeling5"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling5"
+                    android:text="Optimistic"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling6"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling6"
+                    android:text="Loved"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling7"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling7"
+                    android:text="Hopeful"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling8"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling8"
+                    android:text="Super"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feeling_row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeling_row2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp"
+                android:gravity="center|center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/feeling9"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling9"
+                    android:text="Great"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling10"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling10"
+                    android:text="Good"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling11"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling11"
+                    android:text="Meh"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling12"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling12"
+                    android:text="Bad"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling13"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling13"
+                    android:text="Sick"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling14"
+                    android:layout_width="43dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling14"
+                    android:text="Awful"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feeling_row4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeling_row3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp">
+
+                <TextView
+                    android:id="@+id/feeling15"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling15"
+                    android:text="Bored"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling16"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling16"
+                    android:text="Frustrated"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling17"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling17"
+                    android:text="Anxious"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling18"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling18"
+                    android:text="Stressed"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feeling_row5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feeling_row4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="45dp">
+
+                <TextView
+                    android:id="@+id/feeling19"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling19"
+                    android:text="Scared"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling20"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling20"
+                    android:text="Angry"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling21"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/feeling_bg"
+                    android:gravity="center"
+                    android:onClick="setFelling21"
+                    android:text="Lonely"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/feeling_bg"
+                    android:drawableLeft="@drawable/ic_baseline_add_24"
+                    android:gravity="center"
+                    android:onClick="showDesiredText"
+                    android:text="Add/Edit"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/desired_feeling_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/feeling_row5"
+                android:layout_margin="20dp"
+                android:hint="Enter your Desired feeling"
+                android:visibility="gone" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorSize="40dp"
+                app:trackColor="#59A5A5A5"
+                app:trackCornerRadius="8dp"
+                app:trackThickness="4dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

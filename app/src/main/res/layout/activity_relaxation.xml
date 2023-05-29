@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelaxationActivity">
+
+    <LinearLayout
+        android:id="@+id/firstcard"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="363dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lightpeach2"
+            app:cardCornerRadius="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Exercise to relieve anxiety and panic attacks"
+                android:textColor="#800080"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="\nRelax your body and focus on the following:\n\n• 5 things you can see\n• 4 things you can feel/touch\n• 3 things you can hear\n• 2 things you smell\n• 1 thing you taste"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondcard"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:weightSum="2"
+        android:layout_below="@id/firstcard">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="363dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lightpeach2"
+            app:cardCornerRadius="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Progressive muscle relaxation"
+                android:textColor="#800080"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="\nAs the name suggests, the progressive muscle relaxation technique includes a series of exercises -
+tightening and then relaxing the muscles in the body - working in turn with each group of muscles.\n\nExercises start with the toes and end with the muscles of the head.\n\nThe goal is deep relaxation and awareness of your body's reactions when you are tense and when
+you are relaxed.\n\nIn this way, you will be able to reduce both physical and emotional tension."
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

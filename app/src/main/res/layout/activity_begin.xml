@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeginActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="363dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightpeach2"
+                app:cardCornerRadius="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#800080"
+                    android:text="Hello, "
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="---"
+                    android:textColor="#800080"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Here’s how we can help you:
+            \n\nWrite about your day and about what you are feeling.
+            \n\nActivities to relieve stress (e.g.,controlled breathing, drawing)
+            \n\nPractice affirmations for self love.
+            \n\nAnd more."
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btn_begin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Begin"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar"
+            android:layout_height="wrap_content"
+            app:trackColor="#59A5A5A5"
+            app:indicatorSize="40dp"
+            app:trackThickness="4dp"
+            app:trackCornerRadius="8dp"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
